@@ -1,8 +1,8 @@
-# Barko Agent - Simple Agent
+# Barko Agent - Coding Agent
 
 To install this you can either use docker or just install all the dependencies for python and then run the code
 
-For this agent to work you need to set `ROOT_TEST` variable to the folder path that has the code project you want to work with. 
+For this agent to work you need to set `ROOT_TEST` variable to the folder path that has the code project you want to work with. Check .env file, you can modify them there.
 For example, if your code is in /Users/your_user/Github/your_awesome_code/ then you should export this env variable like this:
 
 - Linux/MacOS:
@@ -26,7 +26,7 @@ put:
 
 To install this you can either use docker or just install all the dependencies for python and then run the code
 
-### Install with docker
+### Option 1: Install with docker
 
 Just in the main directory you can write:
 
@@ -34,7 +34,7 @@ Just in the main directory you can write:
     docker-compose up
 </pre>
 
-### Install python
+### Option 2: Install python
 
 Make sure you are using the Python versions 3.9 - 3.12
 
