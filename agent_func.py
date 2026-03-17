@@ -1,5 +1,5 @@
 """
-Python implementations of Claude Code's built-in tools.
+Python implementations coding tools.
 """
 
 import fnmatch
