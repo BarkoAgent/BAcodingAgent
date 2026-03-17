@@ -287,31 +287,3 @@ def todo_read() -> list[dict]:
     with open(TODO_FILE, "r") as f:
         return json.load(f)
 
-
-# ---------------------------------------------------------------------------
-# Quick demo
-# ---------------------------------------------------------------------------
-
-if __name__ == "__main__":
-    print("=== write ===")
-    write("/tmp/claude_tools_test.txt", "hello\nworld\n")
-
-    print("=== read ===")
-    print(read("/tmp/claude_tools_test.txt"))
-
-    print("=== edit ===")
-    edit("/tmp/claude_tools_test.txt", "world", "claude")
-    print(read("/tmp/claude_tools_test.txt"))
-
-    print("=== glob ===")
-    print(glob("*.py", path="."))
-
-    print("=== grep ===")
-    print(grep("def ", path=__file__, output_mode="content", head_limit=5))
-
-    print("=== bash ===")
-    print(bash("echo 'hello from bash'"))
-
-    print("=== todo_write / todo_read ===")
-    todo_write([{"id": "1", "content": "demo task", "status": "pending", "priority": "high"}])
-    print(todo_read())
